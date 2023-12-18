@@ -13,11 +13,11 @@ public class TryCatch {
             try {
                 System.out.print("Lütfen bir tamsayı giriniz: ");
                 giris = scan.nextInt();
-                scan.nextLine();  // Buffer'ı temizleme
+                scan.nextLine();
                 gecerliGiris = true;
             } catch (Exception e) {
                 System.out.println("Geçerli bir tamsayı girmediniz. Tekrar deneyin.");
-                scan.nextLine();  // Hatalı girişi temizleme
+                scan.nextLine();
             }
         } while (!gecerliGiris);
 
@@ -41,13 +41,6 @@ public class TryCatch {
         return giris;
     }
 
-    public static void main(String[] args) {
-        // Örnek Kullanım
-        int kullaniciSayi = intGiris();
-        System.out.println("Girilen sayı: " + kullaniciSayi);
 
-        String kullaniciMetin = stringGiris();
-        System.out.println("Girilen metin: " + kullaniciMetin);
-    }
 
 }
